@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - LuxeLiving</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: cursive, sans-serif;
+            background: linear-gradient(to right, #000046, #1CB5E0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-family: cursive;
+            text-align: center;
+            color: #2e2e2e;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: 0.3s;
+            font-family: cursive;
+        }
+
+        input:focus {
+            border-color: #bfa980;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(191, 169, 128, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #bfa980;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: cursive;
+        }
+
+        button:hover {
+            background-color: #a99068;
+        }
+
+        @media screen and (max-width: 500px) {
+            form {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Create Your LuxeLiving Account</h1>
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
